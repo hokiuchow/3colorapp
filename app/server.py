@@ -9,6 +9,8 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
+
 export_file_url = 'https://www.dropbox.com/s/dz8v7kwk89zbiqx/export.pkl?dl=1'
 export_file_name = 'export.pkl'
 
